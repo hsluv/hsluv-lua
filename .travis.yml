@@ -1,0 +1,14 @@
+language: ruby
+
+before_script:
+    - ./travis.sh
+env:
+    - LUA_VERSION=5.2.3
+    - LUA_VERSION=5.1.5
+
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq lua-cjson
+
+script: 
+    - ./lua/lua husl_test.lua
