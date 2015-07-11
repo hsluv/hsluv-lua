@@ -1,5 +1,5 @@
 local husl = require "husl"
-local json = require "cjson"
+local json = require "dkjson"
 
 do
     local function assert_tuples_close(a, b)
@@ -19,7 +19,7 @@ do
     local content = file:read("*all")
     file:close()
 
-    local snapshot = json.decode(content)
+    local snapshot, pos, err = json.decode(content)
 
     for hex_color, colors in pairs(snapshot) do
         -- test forward functions
@@ -55,4 +55,5 @@ do
         assert_equal(husl.huslp_to_hex(unpack(colors.huslp)), hex_color)
         assert_tuples_close({husl.hex_to_huslp(hex_color)}, colors.huslp)
     end
+    print "success"
 end
