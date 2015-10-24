@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/husl-colors/husl-lua.svg)](https://travis-ci.org/husl-colors/husl-lua)
+[![Package Version](https://img.shields.io/badge/luarocks-1.0--0-blue.svg)](https://luarocks.org/modules/husl-colors/husl)
 
 Lua implementation of [HUSL](http://www.boronine.com/husl/) (revision 2), courtesy of [Mark Wonnacott](https://github.com/Ragzouken).
 
