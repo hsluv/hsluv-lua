@@ -1,4 +1,6 @@
-Lua port of [HUSL](http://www.boronine.com/husl/) (revision 2), courtesy of [Mark Wonnacott](https://github.com/Ragzouken).
+[![Build Status](https://travis-ci.org/husl-colors/husl-lua.svg)](https://travis-ci.org/husl-colors/husl-lua)
+
+Lua implementation of [HUSL](http://www.boronine.com/husl/) (revision 2), courtesy of [Mark Wonnacott](https://github.com/Ragzouken).
 
     > husl = require 'husl'
     > = husl.hex_to_husl('#123456')
