@@ -3,6 +3,14 @@
 
 Lua implementation of [HUSL](http://www.boronine.com/husl/) (revision 2), courtesy of [Mark Wonnacott](https://github.com/Ragzouken).
 
+# Installation
+
+Copy the husl.lua file directly into your project or install from luarocks:
+
+    luarocks install husl
+
+# Usage
+
     > husl = require 'husl'
     > = husl.hex_to_husl('#123456')
     248.60320341681 85.43201417605  21.04172364179
