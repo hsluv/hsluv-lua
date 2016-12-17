@@ -12,4 +12,4 @@ env:
   - LUA_VERSION=5.1
 
 script: 
-  - lua$LUA_VERSION husl_test.lua
+  - lua$LUA_VERSION hsluv_test.lua
