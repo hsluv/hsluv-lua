@@ -4,7 +4,7 @@ hexChars = "0123456789abcdef"
 
 
 distance_line_from_origin = function(line)
-    return math.abs(line.intercept) / math.sqrt(math.pow(line.slope, 2) + 1)
+    return math.abs(line.intercept) / math.sqrt((line.slope ^ 2) + 1)
 end
 
 length_of_ray_until_intersect = function(theta, line)
@@ -14,7 +14,7 @@ end
 hsluv.get_bounds = function(l)
     local result = {};
     local sub2;
-    local sub1 = math.pow(l + 16, 3) / 1560896;
+    local sub1 = ((l + 16) ^ 3) / 1560896;
     if sub1 > hsluv.epsilon then
         sub2 = sub1;
     else
@@ -79,13 +79,13 @@ hsluv.from_linear = function(c)
     if c <= 0.0031308 then
         return 12.92 * c
     else
-        return 1.055 * math.pow(c, 0.416666666666666685) - 0.055
+        return 1.055 * (c ^ 0.416666666666666685) - 0.055
     end;
 end
 
 hsluv.to_linear = function(c)
     if c > 0.04045 then
-        return math.pow((c + 0.055) / 1.055, 2.4)
+        return ((c + 0.055) / 1.055) ^ 2.4
     else
         return c / 12.92
     end;
@@ -116,7 +116,7 @@ hsluv.y_to_l = function(Y)
     if Y <= hsluv.epsilon then
         return Y / hsluv.refY * hsluv.kappa
     else
-        return 116 * math.pow(Y / hsluv.refY, 0.333333333333333315) - 16
+        return 116 * ((Y / hsluv.refY) ^ 0.333333333333333315) - 16
     end;
 end
 
@@ -124,7 +124,7 @@ hsluv.l_to_y = function(L)
     if L <= 8 then
         return hsluv.refY * L / hsluv.kappa
     else
-        return hsluv.refY * math.pow((L + 16) / 116, 3)
+        return hsluv.refY * (((L + 16) / 116) ^ 3)
     end;
 end
 
