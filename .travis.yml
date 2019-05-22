@@ -1,13 +1,16 @@
 language: c
 sudo: false
+dist: xenial
 
 addons:
   apt:
     packages:
       - lua5.1
       - lua5.2
+      - lua5.3
 
 env:
+  - LUA_VERSION=5.3
   - LUA_VERSION=5.2
   - LUA_VERSION=5.1
 
