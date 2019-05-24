@@ -5,7 +5,7 @@ Lua implementation of [HSLuv](http://www.hsluv.org/) (revision 4), courtesy of [
 
 # Installation
 
-Copy the husl.lua file directly into your project or install from luarocks:
+Copy the hsluv.lua file directly into your project or install from luarocks:
 
     luarocks install hsluv
 
@@ -21,11 +21,11 @@ Copy the husl.lua file directly into your project or install from luarocks:
     > = hsluv.hsluv_to_rgb({248.49, 85.00, 20.58})
     0.070014042122372   0.19996570399156   0.32991848455264
 
-For HUSLp, use `hex_to_hpluv`, `hpluv_to_hex`, `rgb_to_hpluv` and `hpluv_to_rgb`.
+For HPLuv, use `hex_to_hpluv`, `hpluv_to_hex`, `rgb_to_hpluv` and `hpluv_to_rgb`.
 
 # License
 
-Copyright (C) 2016 Alexei Boronine
+Copyright (C) 2019 Alexei Boronine
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction, including 
