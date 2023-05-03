@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hsluv/hsluv-lua.svg)](https://travis-ci.org/hsluv/hsluv-lua)
+[![Build Status](https://github.com/hsluv/hsluv-lua/actions/workflows/test.yml/badge.svg)](https://github.com/hsluv/hsluv-lua/actions/workflows/test.yml)
 [![Package Version](https://img.shields.io/badge/luarocks-0.1--0-blue.svg)](https://luarocks.org/modules/hsluv/hsluv)
 
 Lua implementation of [HSLuv](http://www.hsluv.org/) (revision 4), courtesy of [Mark Wonnacott](https://github.com/Ragzouken).
